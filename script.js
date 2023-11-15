@@ -3,14 +3,14 @@ window.addEventListener('mousemove', function(details){
 
     var xval = gsap.utils.mapRange(0,
         window.innerWidth,
-        105 + circle.getBoundingClientRect().width/2,
-        window.innerWidth - (105 + circle.getBoundingClientRect().width/2),
+        70 + circle.getBoundingClientRect().width/2,
+        window.innerWidth - (70 + circle.getBoundingClientRect().width/2),
         details.clientX);
         
     var yval = gsap.utils.mapRange(0,
         window.innerHeight,
-        50 + circle.getBoundingClientRect().height/2,
-        window.innerHeight - (50 + circle.getBoundingClientRect().height/2),
+        30 + circle.getBoundingClientRect().height/2,
+        window.innerHeight - (30 + circle.getBoundingClientRect().height/2),
         details.clientY);
 
     gsap.to('#rect', {
